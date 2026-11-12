@@ -38,6 +38,7 @@ Versions are those reported in the Methods of the manuscript (Sections 4.2 and 5
 | Exploratory plots | pheatmap, viridis, ggplot2 | n/r | `04_differential_expression` |
 | Domain annotation / GO | InterProScan | 5.76 | `05_annotation_and_enrichment` |
 | Enrichment | clusterProfiler, GO.db (R) | n/r | `05_annotation_and_enrichment` |
+| Network analysis | Python (pandas, numpy, scipy, NetworkX, matplotlib) | n/r (NetworkX 3.7) | `06_ppi_network` |
 | Variant calling | samtools, bcftools, FreeBayes | n/r | `06_variant_calling` |
 | Validation | BLAST+, seqtk, bowtie2, samtools, IGV | n/r | `07_validation_vs_asparagus` |
-| PPI network | STRING, NetworkX, Cytoscape | 12.0; 3.7; 3.10.5 | - |
+| PPI network | STRING, Cytoscape | 12.0; 3.10.5 | `06_ppi_network` |

@@ -1,8 +1,6 @@
-# GO over-representation analysis (hypergeometric test + Benjamini-Hochberg, FDR < 0.05) of up/down-regulated DEGs in groups A and B (Section 5.2.5).
+# GO over-representation analysis for the stratified analyses (groups A and B). Inputs: DEGs_DEG_A_shrink.tsv / DEGs_DEG_B_shrink.tsv, universe_ids.txt and the InterProScan TSV.
 # Replace every [diretório_*] placeholder with the path used in your environment (see docs/PATHS.md).
 
-# Input: DEG tables (DEGs_DEG_A_shrink.tsv / DEGs_DEG_B_shrink.tsv), universe_ids.txt (all tested transcripts) and the InterProScan TSV.
-# Output: one dotplot (PDF) per group and direction.
 
 # 1. Carregamento de Pacotes
 library(tidyverse)

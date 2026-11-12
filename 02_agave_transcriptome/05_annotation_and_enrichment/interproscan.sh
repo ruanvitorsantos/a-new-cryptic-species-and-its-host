@@ -21,5 +21,6 @@ cd [diretório_interproscan]
     -appl cdd,hamap,ncbifam,pirsf,pfam,prints,prositepatterns,prositeprofiles,panther,smart,sfld,funfam,gene3d,superfamily \
     -goterms -pa
 
+# [CONFIRMAR] the final enrichment scripts read resultados/ASS_novo_anotacao.tsv; make sure the -b name above matches the file actually used.
 # flags: -goterms = Gene Ontology terms; -pa = pathway annotations (KEGG/Reactome/MetaCyc);
 #        -f tsv is the table used downstream in R (column V14 = GO terms).

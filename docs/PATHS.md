@@ -5,7 +5,10 @@ Every local path was replaced by a placeholder so that the scripts are the same 
 | Placeholder | Meaning |
 | --- | --- |
 | `[diretório_projeto_sisal]` | Root directory of the *Agave sisalana* project |
-| `[diretório_transcriptoma]` | Transcriptome work directory (assembly, rRNA databases, SortMeRNA results, BUSCO lineages) |
+| `[diretório_transcriptoma]` | Current transcriptome work directory: TransDecoder proteins (`protein/`), STRING files (`string_db/`, `string_db5/`), DIAMOND results (`ref5/`, `ref7/`) and the outputs of the network analysis |
+| `[diretório_transcriptoma_base]` | Initial transcriptome work directory: assembly, rRNA databases, SortMeRNA results and BUSCO lineages |
+| `[diretório_deseq2_results]` | Directory where the DESeq2 objects and tables are written (`dds_completo.rds`, `vsd_completo.rds`, `DEGs_todos_shrink.tsv`, ...) |
+| `[diretório_tabelas_suplementares]` | Output directory of the supplementary tables |
 | `[diretório_salmon]` | Salmon work directory (cleaned reads and indices) |
 | `[diretório_salmon_quants]` | Directory with one sub-folder per sample containing `quant.sf` |
 | `[diretório_interproscan]` | InterProScan installation directory (contains `interproscan.sh` and `resultados/`) |
@@ -18,6 +21,5 @@ Every local path was replaced by a placeholder so that the scripts are the same 
 | `[diretório_filogenia]` | Directory with the protein sets given to OrthoFinder |
 | `[diretório_marcadores_cam]` | Directory with the marker (calmodulin) protein database |
 | `[diretório_miniconda]` | Miniconda installation directory |
-| `[diretório_home]` | User home directory (only where a script needs it) |
 
 Conda/micromamba environments are referenced by **name** (for example `micromamba activate ncbi_datasets`), not by path.
